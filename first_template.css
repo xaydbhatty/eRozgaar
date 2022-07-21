@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/* Base Styling */
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box; 
+
+}
+body{
+    font-family: "poppins",sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:whitesmoke
+    
+}
+h1,h2,p{
+
+    margin: 1.6rem 0 ;
+}
+
+h1{
+  font-weight: 800;  
+  font-size: 3.6rem;
+}
+
+h2{
+    font-weight: 800;  
+    font-size: 2.4rem;
+    
+  }
+
+  p{
+    font-weight: 400;  
+    font-size: 1.8rem;
+    
+  }
+
+  img{
+    /*this code will make image responsive*/
+    width: 100%;
+    height: auto;
+  }
+  /* its a utility class to layout content in a horizontal way */
+  .row{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+
+/* Hero Section */
+
+header{
+
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(./Images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    
+}
+
+.logo h1 {
+   font-size: 3.2rem; 
+   color: #4caf50;
+   margin: 0;
+}
+
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+nav box-icon{
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    
+
+}
+nav ul li{
+  display: inline-block;  
+  margin-left: 2.5rem ;
+}
+
+nav ul li a:hover {
+    color: #6715d3;
+    transition: .5s ease-in-out;
+    
+}
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 1%;
+    left: 8%;
+    
+}
+.header-content h1{
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+form{
+    margin: 1.4rem 0;
+
+}
+
+input{
+    font-size: 1.8rem;
+}
+input[type=text],
+input[type=email]{
+    width: 50%;
+    padding: 5px 10px;
+    margin: .5rem 0;
+    display: block;
+    border:1px solid #ccc;
+}
+input[type=submit]{
+width: 50%;
+background-color: #4caf50;
+color: rgb(250, 243, 243);
+padding: 14PX 20PX;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+}
+input::placeholder{
+    font-size: 1rem;
+    color: rgb(206, 48, 48);
+}
+
+.about-left,
+.about-middle,
+.about-rigt{
+ flex-basis: 1 ;
+ padding: 1.6rem;   
+}
+.btn{
+    width: 50%;
+    background-color: #4caf50;
+    color: rgb(250, 243, 243);
+    padding: 14PX 20PX;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+.about2{
+    background-color:#222;
+    color: whitesmoke;
+}
+.about2-left{
+    flex-basis: 50%;
+}
+.about2-right{
+    flex-basis: 30%;
+}
+
+.about2 .card{
+    padding: 3rem 0rem;
+    color: #4caf50;
+    background-color: #dcdcdc;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+
+@media all and (max-width:768px){
+    nav{
+       flex-direction: column;
+       position: relative;
+    }
+   nav box-icon{
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    
+   }
+   nav ul {
+    background: rgb(219, 89, 19);
+      display: none;  
+   }
+   .showmenu{
+    display: block;
+   }
+   nav ul li{
+     display: block; 
+    padding: 2% 0;
+     }
+     nav ul li a{
+        color: black;
+        }
+  
+}
